@@ -1,0 +1,82 @@
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+    background: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #596b86; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  }
+
+.container.gallery-container {
+    background-color: #161616;
+    color: #35373a;
+    width: 1300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+	color: white;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    max-width: 900px;
+    margin: auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+    margin: auto;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.00);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 800px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
