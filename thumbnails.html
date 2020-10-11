@@ -1,0 +1,77 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Thumbnails</title>
+<link rel="stylesheet" href=css/thumbnail.css>
+<link rel="stylesheet" href=css/gallery-grid.css>
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<meta property="og:title" content="Allison GFX"/>
+<meta property="og:description" content="The official portfolio page where all the thumbnails is stored with a gallery system."/>
+<meta property="og:image" content="images/logo.png"/>
+<style type="text/css">
+  body {
+   	background-color: #181818;
+   	padding: 0;
+   	margin: 0;
+  }
+  </style>
+  </head>
+  <body>
+    <section>
+        <div class="title">
+			Thumbnails
+        </div>
+    </section>
+  </body>
+  <body>
+    <section>
+      <div class="top-left-logo">
+		  	<a href ="index.html">
+				<img src="images/logo.png">
+		 	</a>
+      </div>
+      <div class="divider">
+	  </div>
+	  	<div class="container gallery-container">
+			<div class="tz-gallery">
+				<div class="resizer">
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="artwork/6tn2i.png">
+							<img src="artwork/6tn2i.png" alt="6tn2i">
+						</a>
+					</div>
+				</div>
+				<div class="resizer">
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="artwork/wg2jb.png">
+							<img src="artwork/wg2jb.png" alt="wg2jb">
+						</a>
+					</div>
+				</div>
+				<!--SEPERATOR-->
+			</div>
+		</div>
+	</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+	baguetteBox.run('.tz-gallery');
+</script>
+<script>
+		var coll = document.getElementsByClassName("Details");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+			}
+			});
+		}
+</script>
+</body>
+</html>

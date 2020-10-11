@@ -1,0 +1,84 @@
+/* fonts */
+
+@font-face {
+	src: url(fonts/Proxima-Nova-Thin.ttf);
+	font-family: proximaT;
+}
+
+@font-face {
+	src: url(fonts/ProximaNova-Regular.ttf);
+	font-family: proximaN;
+}
+
+@font-face {
+	src: url(fonts/Samble-Tracie.ttf);
+	font-family: brush;
+}
+
+/* postitioning and styling of the page title */
+
+.title{
+  font-family: brush;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 25px;
+  color: #fff
+}
+
+/* logo */
+
+.top-left-logo {
+  margin-top: -100px;
+  margin-left: 25px;
+}
+
+/* dividers */
+
+.divider {
+  border-top: 3px solid #bbb;
+  margin-top: 50px;
+}
+
+/* caption styling */
+
+.caption1 {
+  font-family: ProximaN;
+  font-size: 16px;
+  margin-left: 190px;
+  margin-top: -45px;
+  color: #fff
+}
+
+.caption2 {
+  font-family: ProximaN;
+  font-size: 16px;
+  margin-left: 190px;
+  margin-top: -137px;
+  color: #fff
+}
+
+img {
+    max-width: 608px;
+    max-height: 342px;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+img:hover {
+    max-width: 608px;
+    max-height: 342px;
+    filter:brightness(115%);
+}
+
+.resizer {
+	display:inline-block;
+    margin: auto;
+    size: auto;
+    position: inherit;
+}
+
+.resizer img {
+	width: 608px;
+    height: 342px;
+}
